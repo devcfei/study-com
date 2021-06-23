@@ -1,0 +1,15 @@
+
+import "unknwn.idl";
+
+
+[
+	object,
+	uuid(4F6DF2D7-8E8D-4A41-BA5B-0FC9627B7943),
+	oleautomation,
+	nonextensible,
+	pointer_default(unique)
+]
+interface IComa : IUnknown {
+	[id(1)] HRESULT SetVal([in] UINT32 val);
+	[id(2)] HRESULT GetVal([in] UINT32* val);
+};
